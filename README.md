@@ -6,6 +6,9 @@
 
 ---
 
+لینک پروژه:
+https://mohammadrezaei5.github.io/Group-feedback-sharing/
+
 ## ✨ امکانات
 
 * 🎲 قرعه‌کشی تصادفی و عادلانه بین اعضای گروه
