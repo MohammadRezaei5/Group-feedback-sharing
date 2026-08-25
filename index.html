@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تقسیم بازخورد گروهی</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="confetti-canvas"></canvas>
+    <div class="app-container">
+      <!-- Header -->
+      <header class="header">
+        <div class="header-top">
+          <h1 class="header-title">تقسیم بازخورد گروهی</h1>
+        </div>
+        <p class="header-subtitle">
+          قرعه‌کشی عادلانه، تصادفی و هیجان‌انگیز برای تبادل نظر اعضای تیم
+        </p>
+        <button class="btn-sound" id="btn-toggle-sound" title="تغییر وضعیت صدا">
+          <span id="sound-icon">🔇</span>
+          <span id="sound-text">صدا: خاموش</span>
+        </button>
+      </header>
+      <!-- Countdown Card -->
+      <div class="countdown-card" id="countdown-card">
+        <div class="countdown-title">
+          <span>⏱️</span>
+          <span>زمان باقی‌مانده تا شروع خودکار قرعه‌کشی:</span>
+        </div>
+        <div class="timer-grid">
+          <div class="timer-box">
+            <div class="timer-val" id="seconds">00</div>
+            <div class="timer-unit">ثانیه</div>
+          </div>
+          <div class="timer-box">
+            <div class="timer-val" id="minutes">00</div>
+            <div class="timer-unit">دقیقه</div>
+          </div>
+          <div class="timer-box">
+            <div class="timer-val" id="hours">00</div>
+            <div class="timer-unit">ساعت</div>
+          </div>
+          <div class="timer-box">
+            <div class="timer-val" id="days">00</div>
+            <div class="timer-unit">روز</div>
+          </div>
+        </div>
+        <div class="countdown-date">
+          <span>5 شهریور ساعت 10:30 صبح </span>
+        </div>
+      </div>
+      <!-- Members Display Section -->
+      <section class="members-section" id="members-section">
+        <div class="member-section-header">
+          <h2 class="section-title">اعضای حاضر در قرعه‌کشی</h2>
+          <span id="members-count-badge"></span>
+        </div>
+        <div class="members-chips" id="members-chips-container">
+          <!-- Dynamically populated -->
+        </div>
+      </section>
+      <!-- Dynamic Draw Slot Stage -->
+      <div class="draw-stage" id="draw-stage">
+        <div class="slot-machine-box">
+          <div class="pair-display-card">
+            <div class="person-card" id="slot-p1">...</div>
+            <div class="shake-hand-icon">🤝</div>
+            <div class="person-card" id="slot-p2">...</div>
+          </div>
+        </div>
+        <div class="draw-status-text" id="draw-status-text">
+          در حال آماده‌سازی قرعه‌کشی
+        </div>
+      </div>
+      <!-- Final Results Grid -->
+      <section class="results-section" id="results-section">
+        <div style="text-align: center">
+          <div class="execution-timestamp-badge" id="execution-timestamp-badge">
+            <span>📅</span> <span id="execution-timestamp-text">...</span>
+          </div>
+        </div>
+
+        <div class="section-title">
+          <span>🎯</span>
+          <span>نتایج نهایی همراه فیدبک</span>
+        </div>
+
+        <div class="results-grid" id="results-grid">
+          <!-- Dynamically populated -->
+        </div>
+
+        <div id="odd-member-container"></div>
+
+        <div class="success-banner">
+          <span>✅</span>
+          <span>تقسیم‌بندی با موفقیت انجام شد!</span>
+        </div>
+
+        <div style="text-align: center">
+          <button class="btn-copy" id="btn-copy-results">
+            <span>📋</span>
+            <span>کپی لیست نتایج</span>
+          </button>
+        </div>
+      </section>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
