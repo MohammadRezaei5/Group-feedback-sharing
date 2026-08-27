@@ -1,13 +1,13 @@
 // variables
 const teamMembers = [
-  "Reyhaneh",
-  "Sahar_F78",
-  "Dina_Eri",
-  "kimiyavm",
-  "nerdysamurai",
-  "mohammadrezaei00",
-  "AhmadAsadiCS",
-  "Mahdi_1404",
+  "علی",
+  "حسین",
+  "محمد",
+  "پدرام",
+  "زهرا",
+  "نادیا",
+  "فاطمه",
+  "مهناز",
 ];
 const targetTimestamp = new Date("2026-08-25T18:25:00").getTime();
 const STORAGE_KEY = "group_feedback_lottery_results_v1";
